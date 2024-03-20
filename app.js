@@ -4,6 +4,10 @@ const shippingRates = {
     "Express Shipping": 12.99,
     "International Shipping": 19.99
 };
+// Function to calculate shipping cost based on selected shipping method
+function calculateShippingCost(shippingMethod) {
+    return shippingRates[shippingMethod];
+}
 
 // Function to add product to cart
 function addToCart(productName, price) {
