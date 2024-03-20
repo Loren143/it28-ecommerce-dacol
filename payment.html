@@ -5,51 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment and Accounting</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="payment.css"> <!-- Link to custom CSS for payment and accounting -->
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product_inventory.html">Product Inventory</a></li>
-            <li><a href="payment_accounting.html">Payment and Accounting</a></li>
-            <li><a href="logistics.html">Logistics</a></li>
-            <li><a href="customer_service.html">Customer Service</a></li>
-            <li><a href="reports.html">Reports</a></li>
-        </ul>
-    </nav><!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Payment and Accounting</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product_inventory.html">Product Inventory</a></li>
-                <li><a href="payment_accounting.html">Payment and Accounting</a></li>
-                <li><a href="logistics.html">Logistics</a></li>
-                <li><a href="customer_service.html">Customer Service</a></li>
-                <li><a href="reports.html">Reports</a></li>
-            </ul>
-        </nav>
-        <div class="container">
-            <h1>Payment and Accounting</h1>
-            
-            <div class="payment-section">
-                <h2>Payment</h2>
-                <p>Here you can manage payments for orders and transactions.</p>
-                <!-- Add payment-related content and functionality here -->
-            </div>
-            <div class="accounting-section">
-                <h2>Accounting</h2>
-                <p>Manage your financial records and accounting tasks here.</p>
-                <!-- Add accounting-related content and functionality here -->
-            </div>
-        </div>
-    
-        <script src="app.js"></script>
-    </body>
-    </html>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product_inventory.html">Product Inventory</a></li>
+        <li><a href="payment_accounting.html">Payment and Accounting</a></li>
+        <li><a href="logistics.html">Logistics</a></li>
+        <li><a href="customer_service.html">Customer Service</a></li>
+        <li><a href="reports.html">Reports</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Payment and Accounting</h1>
+    <div class="payment-info">
+        <h2>Payment Information</h2>
+        <p>Please enter your payment details below:</p>
+        <form id="paymentForm">
+            <label for="cardNumber">Card Number:</label><br>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number"><br>
+            <label for="expiryDate">Expiry Date:</label><br>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY"><br>
+            <label for="cvv">CVV:</label><br>
+            <input type="text" id="cvv" name="cvv" placeholder="Enter CVV"><br><br>
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+    <div class="accounting-info">
+        <h2>Accounting Information</h2>
+        <p>Here you can manage your accounting details:</p>
+        <!-- Accounting details and management options can be added here -->
+    </div>
+</div>
+
+</body>
+</html>

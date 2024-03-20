@@ -1,0 +1,59 @@
+/* payment_accounting.css */
+
+.payment-info {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.payment-info h2 {
+    color: #007bff;
+}
+
+.payment-info p {
+    margin-bottom: 10px;
+}
+
+.payment-info form {
+    margin-top: 10px;
+}
+
+.payment-info label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-info input[type="text"],
+.payment-info input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.payment-info input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.payment-info input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.accounting-info {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.accounting-info h2 {
+    color: #007bff;
+}
+
+.accounting-info p {
+    margin-bottom: 10px;
+}
