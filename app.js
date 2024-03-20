@@ -1,3 +1,10 @@
+// Define shipping rates for different shipping methods
+const shippingRates = {
+    "Standard Shipping": 5.99,
+    "Express Shipping": 12.99,
+    "International Shipping": 19.99
+};
+
 // Function to add product to cart
 function addToCart(productName, price) {
     // Retrieve existing cart data from localStorage
