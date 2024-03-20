@@ -8,6 +8,24 @@ const shippingRates = {
 function calculateShippingCost(shippingMethod) {
     return shippingRates[shippingMethod];
 }
+// Function to display estimated delivery time based on selected shipping method
+function displayDeliveryTime(shippingMethod) {
+    let deliveryTime;
+    switch (shippingMethod) {
+        case "Standard Shipping":
+            deliveryTime = "3-5 business days";
+            break;
+        case "Express Shipping":
+            deliveryTime = "1-2 business days";
+            break;
+        case "International Shipping":
+            deliveryTime = "7-14 business days";
+            break;
+        default:
+            deliveryTime = "N/A";
+    }
+    return deliveryTime;
+}
 
 // Function to add product to cart
 function addToCart(productName, price) {
