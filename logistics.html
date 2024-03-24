@@ -1,57 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipping Information</title>
-    <link rel="stylesheet" href="logistics.css">
+<meta charset="UTF-8">
+<title> Product Shop</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="logistics.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="use.fontawesome.com/releases/v5.15.4/css/all.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product_inventory.html">Product Inventory</a></li>
-            <li><a href="payment_accounting.html">Payment and Accounting</a></li>
-            <li><a href="logistics.html">Logistics</a></li>
-            <li><a href="customer_service.html">Customer Service</a></li>
-            <li><a href="reports.html">Reports</a></li>
+<div class="header">
+<div class="container">
+<div class="navbar">
+<div class="logo">
+<img src="https://tse2.mm.bing.net/th?id=OIP.7yaXURN2zUfsnqZDKm0YdQHaHa&pid=Api&P=0&h=180" width="125 px">
+</div>
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Product Inventory</a></li>
+        <li><a href="payment.html">Payment and Accounting</a></li>
+        <li><a href="logistics.html">Logistics</a></li>
+        <li><a href="customer_service.html">Customer Service</a></li>
+        <li><a href="reports.html">Reports</a></li>
+    </ul>
+</nav>
+<img src="https://tse2.mm.bing.net/th?id=OIP.4mDv4lolzqtKDPHHU7ZasgHaHa&pid=Api&P=0&h=180" width="70px" height="70px">
+</div>
+<div class="row">
+<div class="col-2">
+<h1>Low Ray's Bag Shop<br>Trendy bags!</h1>
+<p>Affordable & suit to your liking <br>site for all your fashion needs</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<main class="shipment-container">
+    <!-- Sample Shipment -->
+    <div class="shipment">
+        <div class="shipment-header">
+            <span class="shipment-number">Order Number: 3439579575</span>
+            <span class="shipment-status in-transit">Already In Transit</span>
+        </div>
+        <ul class="shipment-items">
+            <li class="shipment-item">
+                <div class="item-icon"><i class="fas fa-box"></i></div>
+                <div class="item-details">Product 1</div>
+            </li>
+            <li class="shipment-item">
+                <div class="item-icon"><i class="fas fa-box"></i></div>
+                <div class="item-details">Product 2</div>
+            </li>
+            <li class="shipment-item">
+                <div class="item-icon"><i class="fas fa-box"></i></div>
+                <div class="item-details">Product 3</div>
+            </li>
         </ul>
-    </nav>
-    <div class="container">
-        <h1>Shipping Information</h1>
-        
-        <div class="shipping-details">
-            <h2>Shipping Methods</h2>
-            <ul>
-                <li>Standard Shipping: 3-5 business days</li>
-                <li>Express Shipping: 1-2 business days</li>
-                <li>International Shipping: 7-14 business days</li>
-            </ul>
-        </div>
-        <div class="shipping-rates">
-            <h2>Shipping Rates</h2>
-            <table>
-                <tr>
-                    <th>Shipping Method</th>
-                    <th>Rate</th>
-                </tr>
-                <tr>
-                    <td>Standard Shipping</td>
-                    <td>$5.99</td>
-                </tr>
-                <tr>
-                    <td>Express Shipping</td>
-                    <td>$12.99</td>
-                </tr>
-                <tr>
-                    <td>International Shipping</td>
-                    <td>$19.99</td>
-                </tr>
-            </table>
-        </div>
     </div>
 
-    <script src="app.js"></script>
+    <!-- Sample Shipment -->
+    <div class="shipment">
+        <div class="shipment-header">
+            <span class="shipment-number">Order Number: 79531739741</span>
+            <span class="shipment-status delivered">Delivered</span>
+        </div>
+        <ul class="shipment-items">
+            <li class="shipment-item">
+                <div class="item-icon"><i class="fas fa-box"></i></div>
+                <div class="item-details">Product 4</div>
+            </li>
+            <li class="shipment-item">
+                <div class="item-icon"><i class="fas fa-box"></i></div>
+                <div class="item-details">Product 5</div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Middle Buttons -->
+    <div class="middle-buttons">
+        <button class="btn-customer-service" onclick="redirectToCustomerService()">Customer Service</button>
+        <button class="btn-reports" onclick="redirectToReports()">Reports</button>
+    </div>
+</main>
+
+
+    <script>
+        function redirectToCustomerService() {
+            // Redirect to customer service page
+            window.location.href = "customer_service.html";
+        }
+
+        function redirectToReports() {
+            // Redirect to reports page
+            window.location.href = "reports.html";
+        }
+    </script>
 </body>
 </html>
         
