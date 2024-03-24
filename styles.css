@@ -1,48 +1,210 @@
-/* styles.css */
-
-/* Reset default margin and padding */
-body, h1, p, ul, li {
+* {
     margin: 0;
     padding: 0;
-}
-
-/* Set background image and color for the body */
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
-    background-color: #f8f8f8; /* Fallback background color */
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #333; /* Text color */
-}
-
-/* Style the navigation bar */
-.navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.navbar ul li {
-    display: inline;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #fff;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', san-serif;
+  }
+  
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  
+  .navbar {
+    background-color: #f1bcbc;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #d3cbca;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  }
+  
+  .buttonb {
+    display: inline-block;
     padding: 10px 20px;
-}
-
-/* Style the container */
-.container {
-    text-align: center;
+    background-color: #5fa6f1;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .buttonb:hover {
+    background-color: #0056b3;
+  }
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: row; /* Display links in a single row */
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar ul li a {
+    display: flex; /* Align text vertically */
+    align-items: center; /* Align text vertically */
+    justify-content: center;
+    font-size: small;/* Align text horizontally */
+    
+    color: rgb(20, 19, 19);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #e9dcdc;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .col-2 {
+    flex-basis: 50;
+    min-width: 300px;
+  }
+  
+  .col-2 img {
+    max-width: 100px;
     padding: 50px 0;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-}
+  }
+  .col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #dbb5b5; 
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #d3cbca;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+  }
+  
+  .btn:hover {
+    background: #563434;
+  }
+  
+  .header {
+    background-image: url('https://media.istockphoto.com/photos/empty-pink-shopping-bag-in-the-studio-lighting-design-concept-for-picture-id1094274086?b=1&k=20&m=1094274086&s=170667a&w=0&h=DpD9GmbfxmddHXOeWWs58rrVJkBm8h7c1lFWxaNnbUk=');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .header .row {
+    margin-top: 70px;
+  }
+  
+  .categories {
+    margin: 70px;
+  }
+  
+  .col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+  }
+  
+  .col-3 img {
+    width: 100%;
+  }
+  
+  .small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+  }
+  
+  .col-4 img {
+    width: 100%;
+  }
+  
+  .title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+  }
+  
+  .title::after {
+    content: ' ';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  h4 {
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .col-4 p {
+    font-size: 14px;
+  }
+  
+  .rating .fa {
+    color: #ff523b;
+  }
+  
+  .col-4:hover {
+    transform: translateY(-5px);
+  }
+  
+  .small-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .small-container button:hover {
+    background-color: #0056b3;
+  }
+  .navbar-text {
+    background-color: #140909; /* Add your desired background color here */
+    padding: 20px;
+  }
+  
